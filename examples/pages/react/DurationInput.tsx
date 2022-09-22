@@ -10,6 +10,7 @@ interface IState {
     required: boolean;
     disabled: boolean;
     invalid: boolean;
+    value: number;
 }
 
 export default class DurationInputDoc extends React.Component<{}, IState> {
@@ -20,9 +21,10 @@ export default class DurationInputDoc extends React.Component<{}, IState> {
             required: true,
             disabled: false,
             invalid: false,
+            value: 0,
         }
     }
-    
+
     render() {
         return (
             <section className='docs-page__container'>
@@ -62,8 +64,9 @@ export default class DurationInputDoc extends React.Component<{}, IState> {
                                 required={this.state.required}
                                 invalid={this.state.invalid}
                                 inlineLabel={this.state.inlineLabel}
-                                onChange={(e) => {
-                                    console.log(e)
+                                seconds={this.state.value}
+                                onChange={(val) => {
+                                    this.setState({value: val});
                                 }}
                                 />
                             </div>
