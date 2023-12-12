@@ -112,5 +112,8 @@
 @import 'primereact/pr-skeleton';
 @import 'primereact/pr-tag-input';
 
+@import '../../node_modules/@superdesk/common/dist/src/index.css';
+@import 'sourcefabric-common-themes';
+
 // React Components
 @import 'avatar';

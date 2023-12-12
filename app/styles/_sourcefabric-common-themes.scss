@@ -1,0 +1,16 @@
+// this is example code, it's not used anywhere yet.
+
+:root {
+    // value is already dependent on theme
+    --sfc-background: var(--sd-colour-background__base--00);
+}
+
+// non-variable values can be set like this:
+
+[data-theme="light-ui"] {
+    --sfc-background: white;
+}
+
+[data-theme="dark-ui"] {
+    --sfc-background: black;
+}

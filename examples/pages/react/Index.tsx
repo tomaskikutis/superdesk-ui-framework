@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+import '@superdesk/common/dist/src/index.css';
+
 import { ReactNav, ReactDefault } from '../../js/react';
 import { ButtonGroup, Button, NavButton, Dropdown } from '../../../app-typescript/index';
 
@@ -69,6 +71,7 @@ import { PopoverDoc } from './Popover';
 import { MenuDocs } from './Menu';
 import {WithSizeObserverDocs} from './WithSizeObserver';
 import {ResizablePanelsDoc} from './ResizablePanels';
+import {CarouselDocs} from './sourcefabric-common/carousel';
 
 const pages = {
     basicComponents: {
@@ -287,6 +290,14 @@ const pages = {
                 name: 'Big icon font'
             }
         }
+    },
+    sourcefabricCommon: {
+        name: "Sourcefabric common",
+        items: {
+            'sourcefabric-common/carousel': {
+                name: 'Carousel',
+            },
+        }
     }
 }
 interface IProps {
@@ -399,6 +410,7 @@ class ReactDoc extends React.Component<IProps, IState> {
                         <Route path="/react/dropzone" component={DropZoneDoc} />
                         <Route path="/react/create-button" component={CreateButtonDoc} />
                         <Route path="/react/resizable-panels" component={ResizablePanelsDoc} />
+                        <Route path="/react/sourcefabric-common/carousel" component={CarouselDocs} />
                         <Route path="/" component={ReactDefault} />
                     </Switch>
                 </main>

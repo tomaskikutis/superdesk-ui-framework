@@ -1,0 +1,1 @@
+export {Carousel as Carousel2} from '@superdesk/common';

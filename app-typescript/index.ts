@@ -61,6 +61,7 @@ export { EmptyState } from './components/EmptyState';
 export { Autocomplete } from './components/Autocomplete';
 export { DonutChart } from './components/DonutChart';
 export { Carousel } from './components/Carousel';
+export { Carousel2 } from './components/Carousel2';
 export { Modal } from './components/Modal';
 export { GridList } from './components/GridList';
 export { GridItem, GridItemContent, GridItemMedia, GridItemFooter, GridItemContentBlock,

@@ -93,6 +93,7 @@
   "dependencies": {
     "@material-ui/lab": "^4.0.0-alpha.56",
     "@popperjs/core": "^2.4.0",
+    "@superdesk/common": "0.0.23",
     "@superdesk/primereact": "^5.0.2-12",
     "@superdesk/react-resizable-panels": "0.0.39",
     "@types/enzyme-adapter-react-16": "^1.0.6",
